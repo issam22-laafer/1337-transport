@@ -11,7 +11,7 @@ export default function Home() {
       className="h-screen flex justify-center items-center w-screen "
     >
       <div className="login_container w-full flex justify-center font-extrabold  items-start flex-col">
-        <div className="box md:w-fit w-screen flex justify-center items-center flex-col md:ml-5">
+        <div className="box md:w-fit w-screen flex justify-center items-center flex-col md:ml-10">
           <h1 className="uppercase text-white sm:text-8xl md:text-8xl text-6xl">
             WELCOME
           </h1>
