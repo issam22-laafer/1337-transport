@@ -21,15 +21,15 @@ export default function Page() {
       }}
       className="home-page "
     >
-      <div className="container-booking mt-20 h-full w-full">
-        <h1 className="login text-white md:pl-10 pl-0  mt-10 font-bold md:text-5xl text-4xl w-full md:text-start text-center">
+      <div className="container-booking mt-20 h-full w-full ">
+        <h1 className="login text-white md:pl-10 pl-0  mt-10 font-bold md:text-5xl text-4xl w-full md:text-center text-center">
           Welcome login!
         </h1>
-        <div className="md:mt-60 mt-20">
-          <h1 className=" text-white md:pl-10 pl-0  font-bold md:text-3xl text-2xl w-full md:text-start text-center">
+        <div className="md:mt-20 mt-20 w-full flex justify-center items-center flex-col">
+          <h1 className=" text-white   font-bold md:text-3xl text-2xl w-full md:text-center text-center">
             Available Bus :
           </h1>
-          <div className="bus-container flex mt-10 xl:justify-start justify-center  flex-wrap flex-wrap items-center w-full">
+          <div className="bus-container flex  justify-center  flex-wrap flex-wrap items-center w-full">
             <div className="sm:w-72  w-72 m-10 h-32 rounded-3xl flex flex-col justify-evenly items-evenly  bg-dark-blue bg-black">
               <div className="container1 flex mt-2 justify-evenly items-center">
                 <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-lightgreen">
@@ -67,6 +67,7 @@ export default function Page() {
                 </button>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
