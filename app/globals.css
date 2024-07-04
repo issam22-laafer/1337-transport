@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.login_container h1 {
+  text-shadow: black 10px 0px 0px;
+}
+
+.login-intra {
+  box-shadow: black 5px 5px 0px;
+}
+
+@media (max-width: 768px) {
+  .bus13 {
+    filter: drop-shadow(0px 5px 0px rgb(255, 255, 255));
+  }
+  .notif {
+    filter: drop-shadow(0px 3.5px 0px rgb(0, 0, 0));
+  }
+  .bus-13 {
+    filter: drop-shadow(0px 3.5px 0px rgb(255, 255, 255));
+  }
+  .logout {
+    filter: drop-shadow(0px 3.5px 0px rgb(0, 0, 0));
+  }
+}
+
+.nav .notif {
+  width: 40px;
+}
+.nav .bus-13 {
+  width: 130px;
+}
+
+.nav .logout {
+  width: 40px;
+}
