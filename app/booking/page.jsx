@@ -33,7 +33,7 @@ export default function Page() {
             <div className="sm:w-72  w-72 m-10 h-32 rounded-3xl flex flex-col justify-evenly items-evenly  bg-dark-blue bg-black">
               <div className="container1 flex mt-2 justify-evenly items-center">
                 <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-lightgreen">
-                  9pm bus
+                  9PM Bus
                 </div>
                 <div className="time-remaining text-3xl text-white font-extrabold">
                   00:42
@@ -51,8 +51,8 @@ export default function Page() {
             {/* ---------------- */}
             <div className="unavailable-bus sm:w-72   w-72 m-10 h-32 rounded-3xl flex  flex-col justify-evenly items-evenly  bg-unavailable-gray bg-black">
               <div className="container1 flex mt-2 justify-evenly items-center">
-                <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-lightgreen">
-                  9pm bus
+                <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-unavailable-green">
+                  9PM Bus
                 </div>
                 <div className="time-remaining text-3xl text-white font-extrabold">
                   00:42
