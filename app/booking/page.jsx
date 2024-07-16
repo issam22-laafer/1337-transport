@@ -1,73 +1,55 @@
 "use client";
 import React from "react"; // Ensure React is imported
-import { useEffect } from "react";
+
 export default function Page() {
-  useEffect(() => {
-    const anvbus = document.getElementsByClassName("unavailable-bus");
-    for (let i = 0; i < anvbus.length; i++) {
-      anvbus[i].style.pointerEvents = "none";
-    }
-  }, []);
   return (
-    <div
-      style={{
-        backgroundImage: 'url("/assets/bg-2.svg")',
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        overflowX: "scroll",
-      }}
-      className="home-page "
-    >
-      <div className="container-booking mt-20 h-full w-full ">
-        <h1 className="login text-white md:pl-10 pl-0  mt-10 font-bold md:text-5xl text-4xl w-full md:text-center text-center">
-          Welcome login!
-        </h1>
-        <div className="md:mt-20 mt-20 w-full flex justify-center items-center flex-col">
-          <h1 className=" text-white   font-bold md:text-3xl text-2xl w-full md:text-center text-center">
-            Available Bus :
+    <div className="min-h-screen  w-screen  ">
+      <div className="text-main-orange backdrop-blur-md flex justify-between px-7 items-center text-center  top-0 w-full text-4xl pt-3 font-bold">
+        1337 BEE
+        <img src="/assets/logout_logo.svg" alt="logout_logo" className="w-22" />
+      </div>
+      <div className="booking_container">
+        <div className="updates"></div>
+        <div className="booking z-[-1] flex justify-center items-center w-96 p-5 border-r-black border-r-2 border-r-solid  flex-col">
+          <h1 className="text-3xl font-extrabold w-full text-start p-2">
+            Next Booking :
           </h1>
-          <div className="bus-container flex  justify-center  flex-wrap flex-wrap items-center w-full">
-            <div className="sm:w-72  w-72 m-10 h-32 rounded-3xl flex flex-col justify-evenly items-evenly  bg-dark-blue bg-black">
-              <div className="container1 flex mt-2 justify-evenly items-center">
-                <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-lightgreen">
-                  9PM Bus
-                </div>
-                <div className="time-remaining text-3xl text-white font-extrabold">
-                  00:42
-                </div>
-              </div>
-              <div className="conatiner2 flex  justify-evenly items-center">
-                <div className="available-places text-center w-32 text-white font-bold">
-                  12 places left
-                </div>
-                <button className="booking-button rounded-2xl bg-light-gray font-bold text-2xl w-24">
-                  Book
-                </button>
+          <div className="booking_card flex overflow-hidden justify-between items-center  rounded-3xl h-16 w-80 bg-main-brown my-3 ">
+            <div className="w-2/3 flex justify-center items-center">
+              <img src="/assets/clock.svg" className="w-4 mr-3" alt="" />
+              <div className="flex flex-col justify-center items-start">
+                <h1 className="font-bold text-2xl">21:00</h1>
+                <span className="text-sm">12 places left</span>
               </div>
             </div>
-            {/* ---------------- */}
-            <div className="unavailable-bus sm:w-72   w-72 m-10 h-32 rounded-3xl flex  flex-col justify-evenly items-evenly  bg-unavailable-gray bg-black">
-              <div className="container1 flex mt-2 justify-evenly items-center">
-                <div className="bus-time w-32 text-center p-2 text-xl rounded-3xl font-bold bg-unavailable-green">
-                  9PM Bus
-                </div>
-                <div className="time-remaining text-3xl text-white font-extrabold">
-                  00:42
-                </div>
-              </div>
-              <div className="conatiner2 flex  justify-evenly items-center">
-                <div className="available-places text-center w-32 text-white font-bold">
-                  12 places left
-                </div>
-                <button className="booking-button rounded-2xl bg-unavailable-blue  font-bold text-2xl w-24">
-                  Book
-                </button>
-              </div>
+            <div className="book_div_rotate relative  text-2xl font-extrabold  text-white w-1/3 flex justify-center items-center  h-full">
+              <span className="z-10">Book</span>
             </div>
-            
+          </div>
+          <div className="blured_booking_card bg-main-brown blur-xs h-14 rounded-full flex justify-center items-center my-3 w-80 text-2xl font-extrabold">
+            <img src="/assets/clock.svg" className="w-5 mr-3" alt="" />
+
+            {" 01:00"}
+          </div>
+          <div className="blured_booking_card bg-main-brown blur-xs h-14 rounded-full flex justify-center items-center my-3 w-80 text-2xl font-extrabold">
+            <img src="/assets/clock.svg" className="w-5 mr-3" alt="" />
+
+            {" 02:00"}
+          </div>
+          <div className="blured_booking_card bg-main-brown blur-xs h-14 rounded-full flex justify-center items-center my-3 w-80 text-2xl font-extrabold">
+            <img src="/assets/clock.svg" className="w-5 mr-3" alt="" />
+
+            {" 04:00"}
+          </div>
+          <div className="blured_booking_card bg-main-brown blur-xs h-14 rounded-full flex justify-center items-center my-3 w-80 text-2xl font-extrabold">
+            <img src="/assets/clock.svg" className="w-5 mr-3" alt="" />
+
+            {" 05:00"}
+          </div>
+          <div className="blured_booking_card bg-main-brown blur-xs h-14 rounded-full flex justify-center items-center my-3 w-80 text-2xl font-extrabold">
+            <img src="/assets/clock.svg" className="w-5 mr-3" alt="" />
+
+            {" 06:00"}
           </div>
         </div>
       </div>

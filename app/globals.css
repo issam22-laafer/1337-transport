@@ -22,13 +22,12 @@
     rgba(27, 38, 44, 1) 100%
   );
 } */
-.nav-blur
-{
+.nav-blur {
   background: rgba(255, 255, 255, 0.2);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .login_container h1 {
@@ -80,4 +79,23 @@ backdrop-filter: blur(5px);
   .nav .notif {
     width: 30px;
   }
+}
+/* 
+@media (max-height: 500px) {
+  .home-container {
+    height: 100%;
+  }
+} */
+
+.book_div_rotate::before
+{
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: calc(100% + 100px);
+  background-color: #F86F03;
+  top : 0;
+  right: 0;
+  z-index: 1;
+  transform: skew(-14deg);
 }

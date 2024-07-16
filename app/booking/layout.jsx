@@ -14,8 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full nav-blur blur-lg h-20  fixed top-0"></div>
-        <Nav />
+     
         {children}
       </body>
     </html>
