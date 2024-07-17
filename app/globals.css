@@ -99,3 +99,8 @@
   z-index: 1;
   transform: skew(-14deg);
 }
+
+.booking_container_time
+{
+  overflow-y: scroll !important;
+}
