@@ -26,6 +26,12 @@ module.exports = {
       blur: {
         xs: "2px",
       },
+      width: {
+        update_w: "calc(100% - 24rem)",
+      },
+      border: {
+        px_1: "1px",
+      },
     },
   },
   plugins: [],
