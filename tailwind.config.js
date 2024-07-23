@@ -28,6 +28,7 @@ module.exports = {
       },
       width: {
         update_w: "calc(100% - 24rem)",
+        paragraph_w : "calc(100vw - 10rem)",
       },
       border: {
         px_1: "1px",
